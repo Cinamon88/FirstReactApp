@@ -18,8 +18,7 @@ const reducer = (state, action) => {
 
     case 'UPDATE_SEARCHSTRING':
       return { 
-        ...state, 
-        cards: [...state.searchString, { ...action.payload }],
+        ...state, searchString: action.payload 
       };
 
     default:
