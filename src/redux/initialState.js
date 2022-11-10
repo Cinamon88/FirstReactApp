@@ -24,7 +24,9 @@ const initialState = {
       { id: 4, columnId: 2, title: 'Star Wars' },
       { id: 5, columnId: 3, title: 'FIFA 2023' },
       { id: 6, columnId: 3, title: 'Skyrim' }
-    ]
+    ],
+
+    searchString: '', 
   
   };
   
