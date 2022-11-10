@@ -8,10 +8,10 @@ import './styles/global.scss';
 import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <React.StrictMode>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </React.StrictMode>
+  </Provider>,
   document.querySelector('#test')
 );
