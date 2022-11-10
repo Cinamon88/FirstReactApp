@@ -20,7 +20,7 @@ const Column = (props) => {
             {...cards} />
         )}
       </ul>
-      <CardForm columnId={props.id} action={props.action} />
+      <CardForm columnId={props.id} />
     </article>
   );
 };
