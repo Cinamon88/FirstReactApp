@@ -1,9 +1,8 @@
 import PageTitle from '../PageTitle/PageTitle';
-import styles from './Favorite.module.scss';
 
 const Favorite = () => {
     return (
-        <div className={styles.favorite}>
+        <div>
             <PageTitle>FAVORITE</PageTitle>
             <p>Lorem Ipsum.</p>
         </div>
