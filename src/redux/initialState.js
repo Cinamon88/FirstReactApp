@@ -35,7 +35,6 @@ const initialState = {
         id: 4,
         title: 'test',
         icon: 'test',
-        listId: 1,
       }
     ],
   
