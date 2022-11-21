@@ -24,7 +24,7 @@ const Favorite = () => {
                   key={favoriteCard.id}
                   cardId={favoriteCard.id}
                   title={favoriteCard.title}
-                  isFavourite={favoriteCard.isFavourite}
+                  isFavorite={favoriteCard.isFavorite}
                 />
               ))}
             </ul>
