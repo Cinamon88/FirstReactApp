@@ -32,9 +32,10 @@ const initialState = {
         listId: '1',
       },
       {
-        id: 4,
+        id: '4',
         title: 'test',
         icon: 'test',
+        listId: '2'
       }
     ],
   
