@@ -20,6 +20,12 @@ export const updateSearchString = (payload) => ({ type: 'UPDATE_SEARCHSTRING', p
 
 const reducer = (state, action) => {
   switch(action.type) {
+    case 'ADD_LIST':
+      return {
+        ...state,
+        lists: [...state.lists, {...action.payload, id: shortid() }],
+      };
+
     case 'ADD_COLUMN':
       return { 
         ...state, 
