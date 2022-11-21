@@ -44,12 +44,12 @@ const initialState = {
     ],
   
     cards: [
-      { id: '1', columnId: '1', title: 'This is Going to Hurt' },
-      { id: '2', columnId: '1', title: 'Interpreter of Maladies' },
-      { id: '3', columnId: '2', title: 'Lost in Space' },
-      { id: '4', columnId: '2', title: 'Star Wars' },
-      { id: '5', columnId: '3', title: 'FIFA 2023' },
-      { id: '6', columnId: '3', title: 'Skyrim' }
+      { id: '1', columnId: '1', title: 'This is Going to Hurt', isFavorite: true },
+      { id: '2', columnId: '1', title: 'Interpreter of Maladies', isFavorite: false },
+      { id: '3', columnId: '2', title: 'Lost in Space', isFavorite: true },
+      { id: '4', columnId: '2', title: 'Star Wars', isFavorite: false },
+      { id: '5', columnId: '3', title: 'FIFA 2023', isFavorite: true },
+      { id: '6', columnId: '3', title: 'Skyrim', isFavorite: false }
     ],
 
     searchString: '', 
