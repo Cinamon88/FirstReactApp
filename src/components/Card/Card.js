@@ -1,5 +1,5 @@
 import styles from './Card.module.scss';
-import { clsx } from 'clsx';
+import clsx from 'clsx';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleCardFavorite } from '../../redux/store';
@@ -22,7 +22,7 @@ const Card = props => {
                 onClick={toggleFavorite} 
                 className={clsx(styles.button, props.isFavorite &&
                 styles.isActive)}>
-                <i className={"fa fa-star"} />
+                <i className={"fa fa-star-o"} />
             </button>
         </li>
     );
