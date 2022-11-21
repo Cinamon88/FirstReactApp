@@ -3,19 +3,21 @@ import {useState} from 'react';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { addColumn } from '../../redux/store';
+// import { useParams } from 'react-router';
 
-const ColumnForm = props => {
+const ColumnForm = ({listId}) => {
+    
+    const [title, setTitle] = useState('');
+    const [icon, setIcon] = useState('');
     const dispatch = useDispatch();
+    // const { listId } = useParams();
 
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(addColumn({ title, icon }));
+        dispatch(addColumn({ title, icon, listId })); // add listId??
         setTitle('');
         setIcon('');
     }
-
-    const [title, setTitle] = useState('');
-    const [icon, setIcon] = useState('');
 
 	return (
         <form onSubmit={handleSubmit}>
