@@ -51,7 +51,7 @@ const reducer = (state, action) => {
     case 'TOGGLE_CARD_FAVORITE':
       return { 
         ...state, cards: state.cards.map(card =>
-        (card.id === action.payload) ? { ...card, isFavorite: !card.isFavorite } : card) 
+        (card.id === action.payload) ? { ...card, isFavorite: !card.isFavorite } : card), 
       };
 
     default:
