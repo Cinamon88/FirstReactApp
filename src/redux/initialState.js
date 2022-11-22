@@ -39,17 +39,24 @@ const initialState = {
         id: '4',
         title: 'test',
         icon: 'test',
-        
-      }
+      },
+      {  
+        listId: '2',
+        id: '4',
+        title: 'test1',
+        icon: 'test1'
+      },
     ],
   
     cards: [
       { id: '1', columnId: '1', title: 'This is Going to Hurt', isFavorite: false },
-      { id: '2', columnId: '1', title: 'Interpreter of Maladies', isFavorite: false },
+      { id: '2', columnId: '1', title: 'Interpreter of Maladies', isFavorite: true },
       { id: '3', columnId: '2', title: 'Lost in Space', isFavorite: false },
       { id: '4', columnId: '2', title: 'Star Wars', isFavorite: false },
-      { id: '5', columnId: '3', title: 'FIFA 2023', isFavorite: false },
-      { id: '6', columnId: '3', title: 'Skyrim', isFavorite: false }
+      { id: '5', columnId: '3', title: 'FIFA 2023', isFavorite: true },
+      { id: '6', columnId: '3', title: 'Skyrim', isFavorite: false },
+      { id: '7', columnId: '4', title: 'Maverick', isFavorite: true },
+      { id: '8', columnId: '4', title: 'Lost', isFavorite: false },
     ],
 
     searchString: '', 
