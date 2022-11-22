@@ -1,8 +1,9 @@
 @import '../../styles/settings.scss';
 
-label {
-     margin-left: 10px;
-     margin-right: 5px;
+.cardForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
