@@ -17,21 +17,23 @@
 }
   
 .button {
-    border: none;
-    background-color: #fff;
+  border: none;
+  background-color: #fff;
 
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    i {
-      color: $color-dark;
-    }
-    
+  i {
+    color: $color-dark;
+  }
+  
 }
 
 .isActive {
-    i {
-      color: $color-favorite;
-    }
+
+  i {
+    color: $color-favorite;
+  }
+
 }
