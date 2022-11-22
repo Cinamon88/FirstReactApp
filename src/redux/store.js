@@ -1,23 +1,9 @@
 import { createStore, combineReducers } from 'redux';
 import initialState from './initialState';
-
 import listsReducer from './listsRedux'
 import columnsReducer from './columnsRedux';
 import cardsReducer from './cardsRedux';
 import searchStringReducer from './searchStringRedux';
-
-//selectors
-
-
-export const searchInputValue = (state) => state.searchString;
-
-
-// action creators
-
-
-export const updateSearchString = (payload) => ({ type: 'UPDATE_SEARCHSTRING', payload, });
-
-
 
 const subreducers = {
   lists: listsReducer,
