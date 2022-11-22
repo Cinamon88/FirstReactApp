@@ -17,10 +17,10 @@ const CardForm = props => {
 
 	return (
         <form className={styles.cardForm} onSubmit={handleSubmit}>
-            <TextInput type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-            <Button>Add card</Button>
+          <div className={styles.padding}><TextInput value={title} onChange={(e) => setTitle(e.target.value)} /></div>
+          <div className={styles.padding}><Button>Add card</Button></div>
         </form>
-	);
+      );
 };
 
 export default CardForm;

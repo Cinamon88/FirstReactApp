@@ -19,11 +19,12 @@ const Favorite = () => {
       <PageTitle>Favorite</PageTitle>
       <div className={styles.column}>
         <ul className={styles.cards}>
-          {favoriteCards.map((isFavorite) => (
+          {favoriteCards.map((favoriteCard) => (
             <Card
-              key={isFavorite.id}
-              title={isFavorite.title}
-              isFavorite={isFavorite.isFavorite}
+              key={favoriteCard.id}
+              cardId={favoriteCard.id}
+              title={favoriteCard.title}
+              isFavorite={favoriteCard.isFavorite}
             />
           ))}
         </ul>

@@ -1,6 +1,6 @@
 @import '../../styles/settings.scss';
 
-form {
+.listForm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,4 +8,10 @@ form {
 
 .padding {
     padding: 10px;
+}
+
+@media all and (max-width: 690px){
+    .listForm {
+        flex-direction: column;
+    }
 }

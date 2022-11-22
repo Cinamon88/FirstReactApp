@@ -6,7 +6,12 @@
     align-items: center;
 }
 
-input {
-    padding: 12px;
-    border-radius: 5px;
+.padding {
+    padding: 10px;
+}
+
+@media all and (max-width: 690px){
+    .cardForm {
+        flex-direction: column;
+    }
 }
