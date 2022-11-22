@@ -19,8 +19,8 @@ const Card = (props) => {
     return (
         <li className={styles.card}>{props.title}
             <button onClick={toggleFavorite} 
-                className={clsx(styles.button, props.isFavorite &&
-                styles.isActive)}>
+                    className={clsx(styles.button, props.isFavorite &&
+                    styles.isActive)}>
                 <i className={"fa fa-star-o"} />
             </button>
         </li>
