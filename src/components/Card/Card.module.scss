@@ -11,21 +11,27 @@
     justify-content: space-between;
     font-weight: bold;
 }
-
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+  
 .button {
-    border: 0px;
-    border-style: none;
+    border: none;
     background-color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i {
+      color: $color-dark;
+    }
     
 }
 
 .isActive {
-    border: none;
-    color: orange;
-    background-color: #fff;
-
-    &:hover {
-        cursor: pointer;
-        color: red;
+    i {
+      color: $color-favorite;
     }
 }
