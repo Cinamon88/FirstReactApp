@@ -9,18 +9,16 @@ import searchStringReducer from './searchStringRedux';
 //selectors
 export const getFilteredCards = ({ cards, searchString}, columnId) => 
   cards.filter(card => card.columnId === columnId && strContains(card.title, searchString));
-export const getAllColumns = (state) => state.columns;
-export const getColumnsByList = ({ columns }, listId) => columns
- .filter((column) => column.listId === listId);
+
 export const searchInputValue = (state) => state.searchString;
 export const getFavoriteCard = (state) => state.cards.filter((card) => 
   card.isFavorite === true);
 
 // action creators
-export const addColumn = (payload) => ({ type: 'ADD_COLUMN', payload });
+
 export const addCard = (payload) => ({ type: 'ADD_CARD', payload });
 export const updateSearchString = (payload) => ({ type: 'UPDATE_SEARCHSTRING', payload, });
-export const toggleCardFavorite = (payload) => ({ type: 'TOGGLE_CARD_PAYLOAD', payload, });
+export const toggleCardFavorite = (payload) => ({ type: 'TOGGLE_CARD_FAVORITE', payload, });
 
 
 const subreducers = {
