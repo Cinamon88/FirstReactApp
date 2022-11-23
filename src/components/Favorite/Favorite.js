@@ -9,7 +9,7 @@ const Favorite = () => {
   if (favoriteCards.length === 0) {
     return (
       <>
-        <PageTitle>No favorite cards</PageTitle>
+        <PageTitle>No favorite cards here!</PageTitle>
       </>
     );
   }
