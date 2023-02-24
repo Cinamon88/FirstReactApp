@@ -4,6 +4,7 @@
 - HTML
 - CSS
 - Sass
+- JavaScript
 - React.js
 - React Router
 - Redux
