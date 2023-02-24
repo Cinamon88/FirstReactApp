@@ -1,3 +1,13 @@
+# Simple To-Do App - React
+
+# Technologies
+- HTML
+- CSS
+- Sass
+- React.js
+- React Router
+- Redux
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
